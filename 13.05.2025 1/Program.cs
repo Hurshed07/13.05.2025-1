@@ -37,7 +37,6 @@ public class BankAccount
         if (amount <= 0)
             throw new ArgumentException("Сумма депозита должна быть положительной.");
 
-        balance += amount;
     }
 
     public bool Withdraw(double amount)
@@ -47,7 +46,7 @@ public class BankAccount
 
         if (balance >= amount)
         {
-            balance -= amount;
+            
             return true; 
         }
         else
